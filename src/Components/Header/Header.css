@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 72%;
+    height: 10vh;
+    background-color: red;
+    color: white;
+    box-shadow: inset 0 0 65px rgba(0, 0, 0, 25%);
+    margin-block-start: 10rem;
+    border-radius: 8px;
+    
+
+}
+header div{
+    display: flex;
+    gap: 1rem;
+}

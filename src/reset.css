@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+body{
+  background: repeating-radial-gradient(
+    circle at 0 0,
+    transparent 0,
+    rgba(0, 0, 0, 0.1) 1px
+  );
+  background-size: 5px 5px;
+  color: #333;  
+  
+}
