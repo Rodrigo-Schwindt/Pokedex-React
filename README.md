@@ -16,7 +16,7 @@ Está desarrollada con **React** y configurada con **Vite**.
 ## ⚙️ Instalación y uso
 
 1. Clonar este repositorio:
-   git clone https://github.com/Rodrigo-Schwindt/Pokedex.git
+   git clone https://github.com/Rodrigo-Schwindt/Pokedex-React.git
 
 2. Entrar a la carpeta del proyecto:
    cd pokedex
