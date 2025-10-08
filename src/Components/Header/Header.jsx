@@ -1,9 +1,8 @@
 import { Search } from "./Search/Search";
-import { TablaTipos } from "./TablaTipos/TablaTipos";
-import { AllAtacks } from "./AllAtacks/AllAtacks";
+import { Menu } from "./Menu/Menu";
 import { useState, useEffect } from 'react';
 import "./Header.css"
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export function Header(){
 
@@ -17,15 +16,17 @@ export function Header(){
     useEffect(() => {
         if(search != ''){ 
         Navigate(`/pokemon/${search}`)};
-    }, [search, Navigate]);
+    }, [search]);
 
     return(
         <header className="header">
             <Search sendSearch={sendSearch} />
             
-            <div>
-                <TablaTipos />
-                <AllAtacks />
+            <div className="section-header">
+                <Menu />
+                <Link to="/types"><h2 className="h2-header">Tipos</h2></ Link>
+                <Link to="/ataques"><h2 className="h2-header">Ataques</h2></ Link>
+                <Link to="/items"><h2 className="h2-header">Items</h2></ Link>
             </div>
             
         </header>

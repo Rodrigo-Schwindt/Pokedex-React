@@ -1,0 +1,47 @@
+.tipo{   
+    display: flex;
+    align-items: center;
+ 
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    background-color: white;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 25%);
+    padding: 1.5rem;
+    margin-block-start: 3rem;
+    border-radius: 32px;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.img-container img{
+    border-radius: 32px;
+    padding: .2rem;
+}    
+.h2{
+    width: fit-content;
+    color: red;
+    font-weight: 100;
+    padding-block-end: 1rem;}
+
+.img-tipo{
+    padding-inline: 7rem 10rem;
+}
+
+@media screen and (max-width: 1316px){   
+    .tipo{
+        flex-direction: column;
+    }
+    .img-tipo{
+        margin-block-start: 3rem;
+    }
+}
+

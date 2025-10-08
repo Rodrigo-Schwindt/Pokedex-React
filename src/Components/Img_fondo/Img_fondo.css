@@ -1,20 +1,128 @@
-.fondo{
-    width: 50%;
-    height: auto;
-    display: flex;
-    justify-self: center;
-    position: inherit;
-    }
-.bg{
+.header-bg{
     position: absolute;
     top: 0;
-    left: 37%;
-    width: 40rem;
-    height: 5.5rem;
-    background:(
-        circle at 0 0,
-        transparent 0,
-        rgba(0, 0, 0, 0.1) 1px
-      );
+    width: 100%;
+    height: 11.7rem;
+    background: #222;
+    box-shadow: inset 0 0 65px rgba(0, 0, 0, 25%);
+    z-index: -2 ;
+
     
 }
+.rayquaza{
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: -1rem;
+    left: 28.2%;
+}
+.gyra{
+    width: 11%;
+    height: auto;
+    position: absolute;
+    top: -1.8rem;
+    left: 60%;
+
+}
+.regigigass{
+    width: 13%;
+    height: auto;
+    position: absolute;
+    top: -1rem;
+    left: 42.5%;
+    z-index: -1;
+}
+.heracross
+{
+    width: 13%;
+    height: auto;
+    position: fixed ;
+    padding-block-start: 5%;
+    padding-inline-start: 1rem;
+    transition: transform 0.5s ease-out;   
+}
+@media screen and (max-width: 1800px){
+    .rayquaza{
+        width: 10%;
+        top: .6rem;
+ 
+        
+    }
+    .gyra{
+        width: 11%;
+        top: 1rem;
+        z-index: -1;
+   
+    }
+    .regigigass{
+        width: 13%;
+        top: .6rem;
+      
+    }
+    .header-bg{
+        height: 10rem;
+    } 
+    
+}
+@media screen and (max-width: 1600px){
+    .header-bg{
+        height: 8rem;
+    }
+    .rayquaza{
+        width: 11.5%;
+        
+    }
+    .gyra{
+        width: 13.2%;
+   
+    }
+    .regigigass{
+        width: 15%;
+      
+    }
+    .header-bg{
+        height: 12rem;
+    } 
+}
+@media screen and (max-width: 1366px){  
+    .rayquaza{
+        width: 12%;
+        top: .6rem;
+        
+    }
+    .gyra{
+        width: 12.5%;
+        top: 1.7rem;
+   
+    }
+    .regigigass{
+        width: 14%;
+        top: .6rem;
+      
+    }
+    .header-bg{
+        height: 10rem;
+    } 
+}
+
+@media screen and (max-width: 1365px){
+    .heracross{
+        display: none;
+    }
+    .rayquaza{
+        display: none;
+        
+    }
+    .gyra{
+        display: none;
+   
+    }
+    .regigigass{
+        display: none;
+      
+    }
+    
+    
+    
+}
+

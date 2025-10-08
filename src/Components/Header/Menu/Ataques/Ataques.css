@@ -1,0 +1,75 @@
+.ataques-section{
+    gap: 3rem;    
+    margin-inline: 14%;
+
+
+}
+
+
+.name-movve{
+    font-size: 1.5rem;
+    padding-inline: 14%;
+}
+.moves-header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: red;
+    box-shadow: inset 0 0 65px rgba(0, 0, 0, 25%);
+    color: #fff;
+    padding: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    top: 0;
+    z-index: 2;
+}
+.move-move {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    text-align: center;
+}
+.move-move p,
+.moves-header h2 {
+    margin: 0;
+    padding: 0.25rem;
+    font-size: 0.95rem;
+}
+.desc {
+    text-align: left;
+    padding-left: 1rem;
+}
+.load{
+    margin-block-start: 100%;
+}
+@media (max-width: 768px) {
+    .moves-header,
+    .move-move {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        text-align: left;
+        padding: 0.5rem;
+    }
+
+    .moves-header h2:nth-child(n+3),
+    .move-move p:nth-child(n+3) {
+        grid-column: span 2;
+    }
+
+    .desc {
+        grid-column: span 2;
+        padding-top: 0.5rem;
+    }
+
+    .moves-header h2, .move-move p {
+        font-size: 0.85rem;
+    }
+}
+.load {
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: bold;
+    color: #555;
+}

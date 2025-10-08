@@ -1,0 +1,35 @@
+.type-table-wrapper {
+    overflow-x: auto;
+    margin: 1rem;
+    background-color: white;
+    margin-block-start: 3rem;
+}
+
+.type-table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 700px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.type-table th,
+.type-table td {
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+
+.cell-2 {
+    background-color: #8bc34a;
+    color: #000;
+}
+
+.cell-½ {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.cell-0 {
+    background-color: #212121;
+    color: #fff;
+}

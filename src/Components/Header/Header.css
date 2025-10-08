@@ -1,18 +1,54 @@
+
+
 .header{
     display: flex;
     align-items: center;
     justify-self: center;
     width: 72%;
-    height: 10vh;
+    height: 8vh;
     background-color: red;
     color: white;
     box-shadow: inset 0 0 65px rgba(0, 0, 0, 25%);
-    margin-block-start: 10rem;
+    margin-block-start: 9.3rem;
     border-radius: 8px;
-    
+    overflow: hidden;
 
 }
 header div{
     display: flex;
     gap: 1rem;
 }
+.section-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-inline: 2rem;
+}
+.section-header h2{
+    color: #222;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 25%);
+    padding: .5rem;
+    border-radius: 16px;
+    font-weight: 100;
+    transition: all 0.3s ease-in-out;
+        &:hover{
+            color: white;
+            cursor: pointer;
+            box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+        }
+}
+@media screen and (max-width: 1024px){
+    .header{
+        width: 100%;
+    }
+
+    
+}
+@media screen and (max-width: 934px){
+    .h2-header{
+        display: none;
+    }
+    
+}
+

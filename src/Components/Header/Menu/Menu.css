@@ -1,0 +1,67 @@
+
+nav button{
+    margin-inline-start: 5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.menu-icon{
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #222;
+    z-index: 2;
+        &:hover{
+            transform: scale(1.1);
+        }
+    
+}
+.menu.open{
+    display: flex;
+}
+.menu{
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 25%);
+    border: solid 1px rgba(0, 0, 0, 25%);
+    color: #222;
+    left: 60%;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    
+        & :first-child:hover{
+            transform: scale(1.1);
+            color: red;
+            cursor: pointer;
+        }
+        & :nth-child(2):hover{
+            transform: scale(1.1);
+            color: red;
+            cursor: pointer;
+        }
+        & :nth-child(3):hover{
+            transform: scale(1.1);
+            color: red;
+            cursor: pointer;
+        }
+}
+@media screen and (max-width: 934px){
+    nav button{
+        display: block;
+    }
+    
+}
+@media screen and (max-width: 836px){
+    .menu{
+        left: 72%;
+    }
+    
+}

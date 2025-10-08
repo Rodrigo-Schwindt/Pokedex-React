@@ -20,10 +20,9 @@ export function Search({ sendSearch }) {
             <input 
                 onChange={(e) => setSearch(e.target.value)} 
                 type="text" 
-                placeholder="Buscar Pokémon" 
+                placeholder="Buscar" 
                 className="searcher"
             />
-            <button type="submit">Buscar</button> 
         </form>
         </>
     );

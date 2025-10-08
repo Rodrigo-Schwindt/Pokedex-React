@@ -39,8 +39,8 @@ export function ListPokemon() {
   }, []);
 
   return (
-    <section id="pokedex">
-      {data.map((pokemon, index) => {
+    <main id="pokedex">
+      {data.map((pokemon) => {
 
         const id = pokemon.url.split("/")[6];
         const img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
@@ -48,10 +48,10 @@ export function ListPokemon() {
         return (
           <Link to={`/pokemon/${id}`} className="btn">
 
-            <div className="pkm" key={index}>
-              <img src={img} alt={pokemon.name} />
+            <div className="pkm" key={pokemon.url}>
+              <img src={img} alt={pokemon.name.replace(/-/g, " ")} />
               <div className="info">
-                <p>{id}</p>
+                <p className="id">{id}</p>
                 <p>{pokemon.name}</p>
               </div>
             </div>
@@ -62,8 +62,8 @@ export function ListPokemon() {
       })}
 
       <div ref={elementRef}>
-        {hasMore && <p>Loading...</p>}
+        {hasMore && <p>Cargando...</p>}
       </div>
-    </section>
+    </main>
   );
 }

@@ -1,0 +1,25 @@
+.tipos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 3rem;    
+    margin-inline: 16%;
+    margin-block-start: 4rem;
+}
+.pokemon-types{
+    display: flex;
+    align-items: center;
+
+}
+.pokemon-types img{
+    cursor: pointer;
+    border-radius: 32px;
+    transition: all 0.3s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,41 +1,69 @@
 .pokemon-icon{
-    font-size: 15rem;
+    font-size: 11rem;
     margin-inline: 7rem;
     color: #222;
 }
 .search{
     display: flex;
 }
-.search button{
-    border: none;
-    border-radius: 8px;
-    padding: 0.3rem;
-    font-size: 1rem;
-    color: #333;
-    width: 5rem;
-    height: 3.5rem;
-    background-color: white;
-    cursor: pointer;
-    outline: yellow 1px solid;
-    transition: all 0.3s ease-in-out;
-        &:hover{
-            background-color: yellow;
-            outline: 3px solid yellow;
-            box-shadow: inset 0 0 5px rgba(0, 0, 0, 65%);
-        }
-}
+
+
+
 .searcher{
     border: none;
     border-radius: 8px;
     padding-inline-start: 3rem;
     width: 25rem;
-    height: 3.5rem;
+    height: 2.5rem;
     background-color: white;
     font-size: 1rem;
-    outline: yellow 2px solid;
-    transition: all 0.3s ease-in-out;
-        &:hover{
-            outline: 3px solid yellow;
-            box-shadow: inset 0 0 5px rgba(0, 0, 0, 65%);
-        }
+}
+@media screen and (max-width: 1600px){
+    .searcher{
+        width: 20rem;
+        padding-inline-start: 2rem;
+    }
+    .pokemon-icon{
+        margin-inline: 5rem;
+    }
+    
+}
+@media screen and (max-width: 1366px){
+    .searcher{
+        width: 14rem;
+        padding-inline-start: 1rem;
+    }
+    .pokemon-icon{
+        margin-inline: 2.5rem;
+    }
+}
+@media (max-width: 1365px) and (min-width: 1024px){
+    .searcher{
+        width: 12rem;
+        padding-inline-start: 1rem;
+    }
+    .pokemon-icon{
+        margin-inline: 1.5rem;
+    }
+    
+    
+}
+@media screen and (max-width: 1148px){
+    .searcher{
+        width: 10rem;
+        padding-inline-start: 1rem;
+    }
+    .pokemon-icon{
+        margin-inline: 1rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    .searcher{
+        width: 14rem;
+        padding-inline-start: 1rem;
+    }
+    .pokemon-icon{
+        margin-inline: 4rem;
+        font-size: 9rem;
+    }
 }
