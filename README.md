@@ -1,6 +1,6 @@
 # 🐾 Pokedex
 
-**Pokedex** es una aplicación web que permite consultar información de distintos Pokémon usando la [PokéAPI](https://pokeapi.co/).  
+**Pokedex** es una pagina web que hice para practicar Frontend y APIrest que permite consultar información de distintos Pokémon usando la [PokéAPI](https://pokeapi.co/).  
 Está desarrollada con **React** y configurada con **Vite**.
 
 ---
